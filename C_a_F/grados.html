@@ -5,20 +5,25 @@
     <title>Conversión de Temperaturas</title>
   </head>
   <body>
+    <script src="grados.js"></script>
+    <center>
     <h1>Convertir °C a °F</h1>
-    <table>
-      <td width=100>
-        <label for="farenheit"> Farenheit </label>
-        <label for="celsius"> Celsius </label>
-      </td>
-      <td width=100>
-        <input name="farenheit" id="farenheit" type="text" />
-        <input name="celsius" id="celsius" type="text" />
-      </td>
-      <td>
-        <button type="button" onclick="convertirCelsius(); return false"> Convertir a Celsius   </button>
-        <button type="button" onclick="convertirFarenheit(); return false"> Convertir a Farenheit </button>
-      </td>
-  </table>
+    <table border= "1px">
+      <tr width=150>
+        <th><label for="farenheit"> Farenheit </label></t>
+        <td><input name="farenheit" id="farenheit" type="text" /></td>
+        <td><button type="button" onclick="convertirCelsius();"> Convertir a Celsius </button></td>
+        <td><input name="conversionFaC" id="conversionFaC" type="text"/></td>
+        <td><label for="farenheit"> Celsius </label></td>
+      </tr>
+      <tr width=150>
+        <th><label for="celsius"> Celsius </label></th>
+        <td><input name="celsius" id="celsius" type="text" /></td>
+        <td><button type="button" onclick="convertirFarenheit();"> Convertir a Farenheit </button></td>
+        <td><input name="conversionCaF" id="conversionCaF" type="text"/></td>
+        <td><label for="farenheit"> Farenheit </label></td>
+      </tr>
+    </table>
+    </center>
   </body>
 </html>
